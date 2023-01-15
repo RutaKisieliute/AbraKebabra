@@ -1,0 +1,154 @@
+@font-face{
+	src: url(fonts/Lobster-Regular.ttf);
+	font-family: lobster;
+	font-weight: normal;
+}
+@font-face{
+	src: url(fonts/Domine-Bold.ttf);
+	font-family: Domine;
+	font-weight: bold;
+}
+@font-face{
+	src: url(fonts/Domine-Regular.ttf);
+	font-family: Domine;
+	font-weight: normal;
+}
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+	background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #555;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+h2, h4{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+h2{
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 1200px){
+	.container{
+	max-width: 1140px;
+	}
+}
+
+.row{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-3, .col-9{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-3{
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.col-9{
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.top-banner{
+	background-color: #497174;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+.site-title{
+	color: #EFF5F5;
+	font-family: lobster;
+	padding-bottom: 35px;
+	padding-top: 30px;
+	margin-bottom: 2px;
+}
+
+.review-box{
+	background-color: #FFFFFF;
+	text-align: justify;
+	margin-bottom: 2px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.kebab-paragraph{
+	color: #497174;
+	font-family: Domine;
+	font-size: 15px;
+	line-height: 20.25px;
+	padding-top: 10px;
+}
+
+.kebab-header{
+	display: inline;
+	color: #497174;
+	font-weight: bold;
+	font-family: Domine;
+	font-size: 22px;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 3px;
+}
+
+.kebab-date{
+	text-align: right;
+	color: #497174;
+	font-weight: bold;
+	font-family: Domine;
+}
